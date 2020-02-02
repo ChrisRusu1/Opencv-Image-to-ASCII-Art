@@ -7,8 +7,7 @@
 
 using namespace cv;
 using namespace std;
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]){
 		Mat image;
 		Mat grayImage;
 		Mat resizeImage;
@@ -28,7 +27,7 @@ int main(int argc, char *argv[])
 			int width = image.cols;
 
 			cvtColor(image, grayImage, CV_BGR2GRAY);
-			resize(grayImage, resizeImage, cv::Size(), resizeValue, resizeValue*.7, INTER_AREA);
+			resize(grayImage, resizeImage, cv::Size(), resizeValue, resizeValue*.6, INTER_AREA);
 			cout << "please input a text file name to store he ascii art, with .txt at the end" << endl;
 			string textfileName;
 			cin >> textfileName;
