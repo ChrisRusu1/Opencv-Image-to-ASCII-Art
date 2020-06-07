@@ -26,7 +26,7 @@ int main(int argc, char *argv[]){
 			int height = image.rows;
 			int width = image.cols;
 
-			cvtColor(image, grayImage, CV_BGR2GRAY);
+			cvtColor(image, grayImage, COLOR_BGR2GRAY);
 			resize(grayImage, resizeImage, cv::Size(), resizeValue, resizeValue*.6, INTER_AREA);
 			cout << "please input a text file name to store he ascii art, with .txt at the end" << endl;
 			string textfileName;
